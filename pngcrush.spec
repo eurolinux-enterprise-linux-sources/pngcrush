@@ -4,7 +4,7 @@
 Summary:        Optimizer for PNG (Portable Network Graphics) files
 Name:           pngcrush
 Version:        1.7.59
-Release:        4%{?dist}
+Release:        2%{?dist}
 License:        zlib
 Group:          Applications/File
 URL:            http://pmt.sourceforge.net/pngcrush/
@@ -43,12 +43,6 @@ gcc %{optflags} $pngflags -lz -o pngcrush pngcrush.c
 %{_bindir}/%{name}
 
 %changelog
-* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 1.7.59-4
-- Mass rebuild 2014-01-24
-
-* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.7.59-3
-- Mass rebuild 2013-12-27
-
 * Sun Jun  2 2013 François Cami <fcami@fedoraproject.org> - 1.7.59-2
 - Switch to the smaller -nolib archive.
 
